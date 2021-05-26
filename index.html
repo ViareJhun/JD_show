@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang = 'ru'>
+<head>
+	<meta charset = 'UTF-8'>
+	<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+	<meta http-equiv = 'X-UA-Compatible' content = 'ie=edge'>
+	
+	<title>ЖД</title>
+	
+	<link rel = 'stylesheet' href = './css/style.css'>
+</head>
+<body>
+	
+	<header class = 'header'>
+		<div class = 'wrapper'>
+		
+			<div class = 'header_logo'>
+				<img src = './svg/header_logo.svg' alt = 'Логотип' class = 'logo-pic'>
+			</div>
+			
+			<nav class = 'header__nav'>
+				<ul class = 'header__list'>
+					<li class = 'header__item'>
+						<a href = '#'>Главная</a>
+					</li>
+					<li class = 'header__item'>
+						<a href = '#'>Портфолио</a>
+					</li>
+					<li class = 'header__item'>
+						<a href = '#'>О нас</a>
+					</li>
+					<li class = 'header__item'>
+						<a class = 'active' href = '#'>География</a>
+					</li>
+					<li class = 'header__item'>
+						<a href = '#'>Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<div class = 'header__phone'>
+				<p class = 'phone-text'>8(902)272-93-14</p>
+				<img src = './svg/header_phone.svg' alt = 'Номер телефона' class = 'phone-pic'>
+			</div>
+			
+		</div>
+	</header>
+	
+	<main class = 'main'>
+		
+		<section class = 'main__intro'>
+			<div class = 'wrapper'>
+				
+				<p class = 'intro__title'>
+					Услуги по строительству<br>и ремонту железнодорожных путей
+				</p>
+				
+				<p class = 'intro__subtitle'>
+					Компания проводит строительные и ремонтные работы<br>на территории более чем 20 субъектов Российской Федерации
+				</p>
+				
+				<form class = 'intro__form'>
+					<p class = 'form-title'>
+						Оставьте заявку на бесплатную консультацию
+					</p>
+					
+					<div class = 'form__name-wrap'>
+						<p class = 'form-subtitle'>Имя</p>
+						<input type = 'text' class = 'form__name' placeholder = 'Михаил'>
+					</div>
+					
+					<div class = 'form__phone-wrap'>
+						<p class = 'form-subtitle'>Номер</p>
+						<input type = 'text' class = 'form__phone' placeholder = '8 (800) 535 35 35'>
+					</div>
+					
+					<div class = 'form__mail-wrap'>
+						<p class = 'form-subtitle'>Почта</p>
+						<input type = 'text' class = 'form__mail' placeholder = 'company@mail.com'>
+					</div>
+					
+					<button class = 'form-button'>
+						ОТПРАВИТЬ
+					</button>
+				</form>
+				
+			</div>
+		</section>
+		
+		<section class = 'geography'>
+			<div class = 'wrapper'>
+				
+				<img src = './svg/geo_pic.svg' alt = 'РФ' class = 'geography-pic'>
+				
+				<p class = 'geography-title'>
+				География работ
+				</p>
+				<p class = 'geography-subtitle'>
+				ООО «Путьремстрой» реализует проекты на всей территории Российской Федерации.
+				</p>
+				<p class = 'geography-text'>
+				Компания проводит строительные и ремонтные работы на территории более чем 20 субъектов Российской Федерации, постоянно расширяя географию присутствия на всю территорию страны. Работа компании ведется как в крупных городах областного значения, так и в небольших населенных пунктах. Заказчиками могут быть региональные или федеральные компании, крупные компании из разных сфер деятельности,заинтересованные в осуществлении транспортных проектов.
+				</p>
+				
+			</div>
+		</section>
+		
+		<section class = 'portfolio'>
+			<div class = 'wrapper'>
+				
+				<p class = 'portfolio-title'>
+				Наше портфолио
+				</p>
+				
+				<div class = 'portfolio-rbutton'></div>
+				<div class = 'portfolio-lbutton'></div>
+				
+				<img class = 'portfolio-pic' alt = 'Ещё одна дорога..' src = './img/pfo_pic.png'>
+				
+				<div class = 'portfolio__card'>
+					
+					<p class = 'card-title'>Ремонт эстакад</p>
+					<p class = 'card-subtitle'>Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</p>
+					<p class = 'card-text'>Проделанные работы:</p>
+					
+					<div class = 'card__list'>
+						<ul class = 'card__llist'>
+							<li class = 'card__litem'>Выкопали ямы (незнай зачем)</li>
+							<li class = 'card__litem'>Положили рельсы</li>
+						</ul>
+						
+						<ul class = 'card__rlist'>
+							<li class = 'card__ritem'>Рельсы рельсы, шпалы шпалы</li>
+							<li class = 'card__ritem'>Ехал поезд запоздалый</li>
+						</ul>
+					</div>
+					
+					<button class = 'card-button'>
+						Оставить заявку
+					</button>
+				</div>
+				
+			</div>
+		</section>
+		
+		<section class = 'advantages'>
+			<div class = 'wrapper'>
+				
+				<p class = 'advantages-title'>Преимущества работы с нами</p>
+				
+				<div class = 'advantages__list'>
+					
+					<ul class = 'advantages__toplist'>
+						<li class = 'toplist-li'>
+							<p class = 'advantages__item-title'>
+							Экономия стредств
+							</p>
+							Специалисты нашей компании грамотно рассчитываю объем работ и количество затрачиваемых материалов, что позволяет исключить дополнительные расходы на заключительных этапах.
+						</li>
+						<li class = 'toplist-mi'>
+							<p class = 'advantages__item-title'>
+							Большой опыт
+							</p>
+							За 2020 год наша компания уложила более 5 километров новых железнодорожных путей и отремонтировала более 30 километров.
+						</li>
+						<li class = 'toplist-ri'>
+							<p class = 'advantages__item-title'>
+							Удобная оплата
+							</p>
+							Постоянный поставщик, сертифицированные материалы. Все сотрудники имеют высокую квалификацию. Работы выполняются современными специализированными инструментами и оборудованием.
+						</li>
+					</ul>
+					
+					<ul class = 'advantages__bottomlist'>
+						<li class = 'bottomlist-li'>
+							<p class = 'advantages__item-title'>
+							Оперативность
+							</p>
+							Один из ключевых факторов нашей работы. Скорость реагирования — залог бесперебойной работы железнодорожного транспорта.
+						</li>
+						<li class = 'bottomlist-mi'>
+							<p class = 'advantages__item-title'>
+							Высокий сервис
+							</p>
+							Наша компания открыта для поиска оптимальных решений с целью достижения поставленных клиентами задач.
+						</li>
+						<li class = 'bottomlist-ri'>
+							<p class = 'advantages__item-title'>
+							Качество
+							</p>
+							Для постоянных клиентов существует возможность оплаты в рассрочку. Предлагаем поэтапную оплату или работаем с предоплатой менее 40%.
+						</li>
+					</ul>
+					
+				</div>
+				
+			</div>
+		</section>
+		
+		<section class = 'about'>
+			<div class = 'wrapper'>
+				
+				<p class = 'about-title'>
+				О нашей компании
+				</p>
+				
+				<div class = 'about__card'>
+					
+					<div class = 'about__card-back'></div>
+					
+					<p class = 'about__card-title'>
+					Компания ООО”Название”
+					</p>
+					
+					<p class = 'about__card-text'>
+					Оказывает широкий спектр услуг по строительству и ремонту железнодорожных путей, Ремонт железнодорожных тупиков, стрелочных переводов, переездов. Опытные сотрудники, наличие необходимого оборудования позволяет в кратчайшие сроки выполнить работы любой сложности качественно и в кратчайшие сроки. Гибкая ценовая политика, наличие СРО. Подбор материалов от новых до Б/У от партнёров.
+					</p>
+					
+					<img src = './img/about_left_pic.png' alt = 'Первый сертификат' class = 'about__card-lpic'>
+					<img src = './img/about_right_pic.png' alt = 'Второй сертификат' class = 'about__card-rpic'>
+					
+				</div>
+				
+				<img src = './img/about_pic.png' alt = 'Дорога' class = 'about-pic'>
+				
+			</div>
+		</section>
+		
+		<section class = 'info'>
+			<div class = 'wrapper'>
+				
+				<div class = 'info__form'>
+					
+					<p class = 'info__form-title'>
+					Остались вопросы?
+					</p>
+					
+					<div class = 'info__form-wrap'>
+						<div class = 'info__ftextarea-wrap'>
+							<p class = 'info__form-subtitle'>
+							Комментарий
+							</p>
+							<textarea class = 'info__ftextarea'>Напишите ваш вопрос...</textarea>
+						</div>
+						<div class = 'info__fname-wrap'>
+							<p class = 'info__form-subtitle'>
+							Имя
+							</p>
+							<input type = 'text' class = 'info__fname' placeholder = 'Михаил'>
+						</div>
+						<div class = 'info__fphone-wrap'>
+							<p class = 'info__form-subtitle'>
+							Телефон
+							</p>
+							<input type = 'text' class = 'info__fphone' placeholder = '8 (800) 535 35 35'>
+						</div>
+						<div class = 'info__fmail-wrap'>
+							<p class = 'info__form-subtitle'>
+							Почта
+							</p>
+							<input type = 'text' class = 'info__fmail' placeholder = 'company@mail.com'>
+						</div>
+					</div>
+					
+					<label class = 'info__label'>
+						<input type="checkbox" checked>
+						<span class="pseudocheckbox">Даю свое согласие<br>с <a href = '#'>политикой конфиденциальности</a></span>
+					</label>
+					
+					<button class = 'info-button'>
+					ОТПРАВИТЬ
+					</button>
+					
+				</div>
+				
+				<div class = 'info-wrap'>
+					
+					<p class = 'info-title'>
+					Контакты
+					</p>
+					
+					<div class = 'info__phone'>
+						<p class = 'info-subtitle'>
+						Телефон:
+						</p>
+						
+						<div class = 'info__phones-wrap'>
+							<p class = 'info-text' style = 'margin-bottom: 18px;'>
+							8(902)272-93-14
+							</p>
+							<p class = 'info-text'>
+							8(982)178-03-07
+							</p>
+						</div>
+					</div>
+					
+					<div class = 'info__mail'>
+						<p class = 'info-subtitle'>
+						E-mail:
+						</p>
+						<p class = 'info-text'>
+						nasvaniye@mail.ru
+						</p>
+					</div>
+					
+					<div class = 'info__addres'>
+						<p class = 'info-subtitle'>
+						Адрес:
+						</p>
+						<p class = 'info-text'>
+						г. Екатеринбург, ул.<br>Колмогорова, дом 67
+						</p>
+					</div>
+					
+					<div class = 'info__name-wrap'>
+					<p class = 'info-subtitle'>
+					ООО “Название”
+					</p>
+					</div>
+					
+					<div class = 'info__social-images'>
+						<img class = 'info__social-wapp' alt = 'Social icon 1' src = './svg/info_wapp.svg'>
+						<img class = 'info__social-phone' alt = 'Social icon 2' src = './svg/info_phone.svg'>
+						<img class = 'info__social-message' alt = 'Social icon 3' src = './svg/info_message.svg'>
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+		
+	</main>
+	
+	<footer class = 'footer'>
+		<div class = 'wrapper'>
+			
+			<p class = 'footer-rights'>
+			Все права защищены
+			</p>
+			
+			<a href = '#' class = 'footer-dev'>
+			Разработка сайта - студия “ТвойСтартап”
+			</a>
+			
+			<img src = './svg/footer_dev.svg' alt = 'Footer icon' class = 'footer-devpic'>
+			
+		</div>
+	</footer>
+	
+</body>
+</html>
