@@ -8,6 +8,7 @@
 	<title>ЖД</title>
 	
 	<link rel = 'stylesheet' href = './css/style.css'>
+	<script type = 'text/javascript' src = './JS/main.js'></script>
 </head>
 <body>
 	
@@ -21,19 +22,19 @@
 			<nav class = 'header__nav'>
 				<ul class = 'header__list'>
 					<li class = 'header__item'>
-						<a href = '#'>Главная</a>
+						<a href = '#top-link' id = 'header-scroller'>Главная</a>
 					</li>
 					<li class = 'header__item'>
-						<a href = '#'>Портфолио</a>
+						<a href = '#portfolio-link' id = 'header-scroller'>Портфолио</a>
 					</li>
 					<li class = 'header__item'>
-						<a href = '#'>О нас</a>
+						<a href = '#about-link' id = 'header-scroller'>О нас</a>
 					</li>
 					<li class = 'header__item'>
-						<a class = 'active' href = '#'>География</a>
+						<a href = '#geo-link' id = 'header-scroller'>География</a>
 					</li>
 					<li class = 'header__item'>
-						<a href = '#'>Контакты</a>
+						<a href = '#info-link' id = 'header-scroller'>Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -50,6 +51,8 @@
 		
 		<section class = 'main__intro'>
 			<div class = 'wrapper'>
+				
+				<h2 id = 'top-link'></h2>
 				
 				<p class = 'intro__title'>
 					Услуги по строительству<br>и ремонту железнодорожных путей
@@ -90,6 +93,8 @@
 		<section class = 'geography'>
 			<div class = 'wrapper'>
 				
+				<h2 id = 'geo-link' class = 'scrollers'></h2>
+				
 				<img src = './svg/geo_pic.svg' alt = 'РФ' class = 'geography-pic'>
 				
 				<p class = 'geography-title'>
@@ -108,36 +113,94 @@
 		<section class = 'portfolio'>
 			<div class = 'wrapper'>
 				
+				<h2 id = 'portfolio-link' class = 'scrollers'></h2>
+				
 				<p class = 'portfolio-title'>
 				Наше портфолио
 				</p>
 				
-				<div class = 'portfolio-rbutton'></div>
-				<div class = 'portfolio-lbutton'></div>
+				<div class = 'portfolio-rbutton' onclick = 'nextSlide()'></div>
+				<div class = 'portfolio-lbutton' onclick = 'prevSlide()'></div>
 				
-				<img class = 'portfolio-pic' alt = 'Ещё одна дорога..' src = './img/pfo_pic.png'>
-				
-				<div class = 'portfolio__card'>
+				<div class = 'portfolio-item' id = 'item-1'>
+					<img class = 'card-pic' alt = 'Ещё одна дорога..' src = './img/pfo_pic.png'>
 					
-					<p class = 'card-title'>Ремонт эстакад</p>
-					<p class = 'card-subtitle'>Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</p>
-					<p class = 'card-text'>Проделанные работы:</p>
-					
-					<div class = 'card__list'>
-						<ul class = 'card__llist'>
-							<li class = 'card__litem'>Выкопали ямы (незнай зачем)</li>
-							<li class = 'card__litem'>Положили рельсы</li>
-						</ul>
+					<div class = 'portfolio__card'>
 						
-						<ul class = 'card__rlist'>
-							<li class = 'card__ritem'>Рельсы рельсы, шпалы шпалы</li>
-							<li class = 'card__ritem'>Ехал поезд запоздалый</li>
-						</ul>
+						<p class = 'card-title'>Ремонт эстакад 1</p>
+						<p class = 'card-subtitle'>Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</p>
+						<p class = 'card-text'>Проделанные работы:</p>
+						
+						<div class = 'card__list'>
+							<ul class = 'card__llist'>
+								<li class = 'card__litem'>Выкопали ямы (незнай зачем)</li>
+								<li class = 'card__litem'>Положили рельсы</li>
+							</ul>
+							
+							<ul class = 'card__rlist'>
+								<li class = 'card__ritem'>Рельсы рельсы, шпалы шпалы</li>
+								<li class = 'card__ritem'>Ехал поезд запоздалый</li>
+							</ul>
+						</div>
+						
+						<button class = 'card-button'>
+							Оставить заявку
+						</button>
 					</div>
+				</div>
+				
+				<div class = 'portfolio-item' id = 'item-2'>
+					<img class = 'card-pic' alt = 'Ещё одна дорога..' src = './img/pfo_pic.png'>
 					
-					<button class = 'card-button'>
-						Оставить заявку
-					</button>
+					<div class = 'portfolio__card'>
+						
+						<p class = 'card-title'>Ремонт эстакад 2</p>
+						<p class = 'card-subtitle'>Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</p>
+						<p class = 'card-text'>Проделанные работы:</p>
+						
+						<div class = 'card__list'>
+							<ul class = 'card__llist'>
+								<li class = 'card__litem'>Выкопали ямы (незнай зачем)</li>
+								<li class = 'card__litem'>Положили рельсы</li>
+							</ul>
+							
+							<ul class = 'card__rlist'>
+								<li class = 'card__ritem'>Рельсы рельсы, шпалы шпалы</li>
+								<li class = 'card__ritem'>Ехал поезд запоздалый</li>
+							</ul>
+						</div>
+						
+						<button class = 'card-button'>
+							Оставить заявку
+						</button>
+					</div>
+				</div>
+				
+				<div class = 'portfolio-item' id = 'item-3'>
+					<img class = 'card-pic' alt = 'Ещё одна дорога..' src = './img/pfo_pic.png'>
+					
+					<div class = 'portfolio__card'>
+						
+						<p class = 'card-title'>Ремонт эстакад 3</p>
+						<p class = 'card-subtitle'>Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</p>
+						<p class = 'card-text'>Проделанные работы:</p>
+						
+						<div class = 'card__list'>
+							<ul class = 'card__llist'>
+								<li class = 'card__litem'>Выкопали ямы (незнай зачем)</li>
+								<li class = 'card__litem'>Положили рельсы</li>
+							</ul>
+							
+							<ul class = 'card__rlist'>
+								<li class = 'card__ritem'>Рельсы рельсы, шпалы шпалы</li>
+								<li class = 'card__ritem'>Ехал поезд запоздалый</li>
+							</ul>
+						</div>
+						
+						<button class = 'card-button'>
+							Оставить заявку
+						</button>
+					</div>
 				</div>
 				
 			</div>
@@ -200,6 +263,8 @@
 		<section class = 'about'>
 			<div class = 'wrapper'>
 				
+				<h2 id = 'about-link' class = 'scrollers'></h2>
+				
 				<p class = 'about-title'>
 				О нашей компании
 				</p>
@@ -240,7 +305,7 @@
 							<p class = 'info__form-subtitle'>
 							Комментарий
 							</p>
-							<textarea class = 'info__ftextarea'>Напишите ваш вопрос...</textarea>
+							<textarea class = 'info__ftextarea' placeholder = "Напишите ваш вопрос.."></textarea>
 						</div>
 						<div class = 'info__fname-wrap'>
 							<p class = 'info__form-subtitle'>
@@ -272,6 +337,8 @@
 					</button>
 					
 				</div>
+				
+				<h2 id = 'info-link'></h2>
 				
 				<div class = 'info-wrap'>
 					

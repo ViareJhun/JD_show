@@ -207,6 +207,10 @@ body {
 
 /* MAIN */
 
+.scrollers {
+	margin-top: -100px;
+}
+
 /* INTRO */
 
 .main__intro {
@@ -402,10 +406,13 @@ body {
 .geography {
 	margin-top: 69px;
 	
-	height: 455px;
+	height: 623px;
 }
 
 .geography-title {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	
 	width: 350px;
 	height: 44px;
 	
@@ -451,6 +458,8 @@ body {
 }
 
 .geography-pic {
+	margin-top: 69px;
+	
 	width: 724px;
 	height: 455px;
 	
@@ -467,7 +476,9 @@ body {
 }
 
 .portfolio-title {
-	margin-top: 0px;
+	padding-top: 100px;
+	padding-bottom: 37.98px;
+	
 	height: 44px;
 	
 	font-family: Geometria;
@@ -516,9 +527,27 @@ body {
 	opacity: 1.0;
 }
 
-.portfolio-pic {
+.portfolio-item {
+	width: 1200px;
+	height: 445px;
+	
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+@keyframes fade {
+    from {
+        /* margin-left: 200px; */
+		opacity: 0.6;
+    }
+    to {
+        /* margin-left: 0px; */
+		opacity: 1.0;
+    }
+}
+
+.card-pic {
 	margin-left: 48px;
-	margin-top: 37.98px;
+	margin-top: -34.98px;
 	
 	width: 408px;
 	height: 540px;
@@ -785,6 +814,8 @@ body {
 }
 
 .about-title {
+	padding-top: 100px;
+	
 	font-family: Geometria;
 	font-style: normal;
 	font-weight: 500;
