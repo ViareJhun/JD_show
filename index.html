@@ -12,6 +12,20 @@
 </head>
 <body>
 	
+	<div class = 'popup-back' id = 'popup'>
+		<div class = 'back-off' id = 'popup-off'></div>
+		<div class = 'popup-wrap'>
+			<div class = 'popup-button' id = 'popup-off'></div>
+			<div class = 'popup-pic'></div>
+			<p class = 'popup-title'>
+			Спасибо!<br>Заявка успешно отправлена
+			</p>
+			<p class = 'popup-text'>
+			Мы свяжемся с вами при первой возможности.
+			</p>
+		</div>
+	</div>
+	
 	<header class = 'header'>
 		<div class = 'wrapper'>
 		
@@ -21,13 +35,11 @@
 			
 			<div class = 'header__nav-back' id = 'menu-modal'>
 				
-				<a href = '#' id = 'modal-off'></a>
+				<a id = 'modal-off'></a>
 				<div class = 'header__nav-wrap'>
 					
 					<img class = 'header__logo-modal' src = './svg/header_logo.svg'>
-					<div class = 'header__button-off'>
-						<a href = '#' id = 'modal-off'></a>
-					</div>
+					<div class = 'header__button-off' id = 'modal-off'></div>
 					
 					<nav class = 'header__nav'>
 						<ul class = 'header__list'>
@@ -105,7 +117,7 @@
 						<input type = 'text' class = 'form__mail' placeholder = 'company@mail.com'>
 					</div>
 					
-					<button class = 'form-button'>
+					<button type = 'button' class = 'form-button' id = 'popup-on'>
 						ОТПРАВИТЬ
 					</button>
 				</form>
@@ -144,7 +156,7 @@
 				<div class = 'portfolio-lbutton' onclick = 'prevSlide()'></div>
 				
 				<div class = 'portfolio-item' id = 'item-1'>
-					<img class = 'card-pic' alt = 'Ещё одна дорога..' src = './img/pfo_pic.png'>
+					<img class = 'card-pic' alt = 'Ещё одна дорога..' src = './img/pfo_pic.jpg'>
 					
 					<div class = 'portfolio__card'>
 						
@@ -171,38 +183,11 @@
 				</div>
 				
 				<div class = 'portfolio-item' id = 'item-2'>
-					<img class = 'card-pic' alt = 'Ещё одна дорога..' src = './img/pfo_pic.png'>
+					<img class = 'card-pic' alt = 'Ещё одна дорога..' src = './img/pfo_pic.jpg'>
 					
 					<div class = 'portfolio__card'>
 						
 						<p class = 'card-title'>Ремонт эстакад 2</p>
-						<p class = 'card-subtitle'>Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</p>
-						<p class = 'card-text'>Проделанные работы:</p>
-						
-						<div class = 'card__list'>
-							<ul class = 'card__llist'>
-								<li class = 'card__litem'>Выкопали ямы (незнай зачем)</li>
-								<li class = 'card__litem'>Положили рельсы</li>
-							</ul>
-							
-							<ul class = 'card__rlist'>
-								<li class = 'card__ritem'>Рельсы рельсы, шпалы шпалы</li>
-								<li class = 'card__ritem'>Ехал поезд запоздалый</li>
-							</ul>
-						</div>
-						
-						<button class = 'card-button'>
-							Оставить заявку
-						</button>
-					</div>
-				</div>
-				
-				<div class = 'portfolio-item' id = 'item-3'>
-					<img class = 'card-pic' alt = 'Ещё одна дорога..' src = './img/pfo_pic.png'>
-					
-					<div class = 'portfolio__card'>
-						
-						<p class = 'card-title'>Ремонт эстакад 3</p>
 						<p class = 'card-subtitle'>Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</p>
 						<p class = 'card-text'>Проделанные работы:</p>
 						
@@ -308,7 +293,7 @@
 					
 				</div>
 				
-				<img src = './img/about_pic.png' alt = 'Дорога' class = 'about-pic'>
+				<img src = './img/about_pic.jpg' alt = 'Дорога' class = 'about-pic'>
 				
 			</div>
 		</section>
@@ -349,7 +334,7 @@
 						</div>
 					</div>
 					
-					<button class = 'info-button'>
+					<button type = 'button' class = 'info-button' id = 'popup-on'>
 					ОТПРАВИТЬ
 					</button>
 					
