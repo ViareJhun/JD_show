@@ -19,27 +19,48 @@
 				<img src = './svg/header_logo.svg' alt = 'Логотип' class = 'logo-pic'>
 			</div>
 			
-			<nav class = 'header__nav'>
-				<ul class = 'header__list'>
-					<li class = 'header__item'>
-						<a href = '#top-link' id = 'header-scroller'>Главная</a>
-					</li>
-					<li class = 'header__item'>
-						<a href = '#portfolio-link' id = 'header-scroller'>Портфолио</a>
-					</li>
-					<li class = 'header__item'>
-						<a href = '#about-link' id = 'header-scroller'>О нас</a>
-					</li>
-					<li class = 'header__item'>
-						<a href = '#geo-link' id = 'header-scroller'>География</a>
-					</li>
-					<li class = 'header__item'>
-						<a href = '#info-link' id = 'header-scroller'>Контакты</a>
-					</li>
-				</ul>
-			</nav>
+			<div class = 'header__nav-back' id = 'menu-modal'>
+				
+				<a href = '#' id = 'modal-off'></a>
+				<div class = 'header__nav-wrap'>
+					
+					<img class = 'header__logo-modal' src = './svg/header_logo.svg'>
+					<div class = 'header__button-off'>
+						<a href = '#' id = 'modal-off'></a>
+					</div>
+					
+					<nav class = 'header__nav'>
+						<ul class = 'header__list'>
+							<li class = 'header__item'>
+								<a href = '#top-link' id = 'header-scroller'>Главная</a>
+							</li>
+							<li class = 'header__item'>
+								<a href = '#portfolio-link' id = 'header-scroller'>Портфолио</a>
+							</li>
+							<li class = 'header__item'>
+								<a href = '#about-link' id = 'header-scroller'>О нас</a>
+							</li>
+							<li class = 'header__item'>
+								<a href = '#geo-link' id = 'header-scroller'>География</a>
+							</li>
+							<li class = 'header__item'>
+								<a href = '#info-link' id = 'header-scroller'>Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				
+					<div class = 'header__modal-phone'>
+						<img src = './svg/header_phone.svg' alt = 'Номер телефона' class = 'modal__phone-pic'>
+						<p class = 'modal__phone-text'>8(902)272-93-14</p>
+					</div>
+					
+				</div>
+				
+			</div>
 			
-			<div class = 'header__button'></div>
+			<div class = 'header__button'>
+				<a href = '#menu-modal' id = 'modal-on'></a>
+			</div>
 			
 			<div class = 'header__phone'>
 				<p class = 'phone-text'>8(902)272-93-14</p>

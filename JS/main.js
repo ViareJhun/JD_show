@@ -1,6 +1,8 @@
 var scrolls = null;
 var slideIndex = 1;
 
+var modalMenu = document.getElementById('menu-modal');
+
 window.onload = () => {
 	scrolls = document.querySelectorAll('#header-scroller')
 
@@ -24,6 +26,19 @@ window.onload = () => {
 	}
 	
 	showSlides(slideIndex);
+	
+	document.getElementById('modal-on').addEventListener(
+		'click',
+		(e) => {
+			document.querySelector('body').style.overflow = 'hidden'
+		}
+	)
+	document.getElementById('modal-off').addEventListener(
+		'click',
+		(e) => {
+			document.querySelector('body').style.overflow = 'visible'
+		}
+	)
 }
 
 nextSlide = () => {
