@@ -674,7 +674,13 @@ body {
 	}
 
 	.intro__title {
+		width: 800px;
+		height: 110px;
+		
+		display: block;
+		
 		padding-top: 199px;
+		margin-left: 178px;
 		
 		font-family: Geometria;
 		font-style: normal;
@@ -688,7 +694,11 @@ body {
 	}
 
 	.intro__subtitle {
-		padding-top: 6.93px;
+		width: 585px;
+		height: 56px;
+		
+		margin-top: 140px;
+		margin-left: 308px;
 		
 		font-family: Geometria;
 		font-style: normal;
